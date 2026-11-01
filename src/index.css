@@ -1,0 +1,11 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{margin:0;background:#17132E;color:#fff;font-family:'Quicksand',sans-serif;overflow-x:hidden}
+.script{font-family:'Dancing Script',cursive}
+.glass{background:rgba(255,255,255,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.18);border-radius:1.5rem}
+.twinkle{animation:tw 3s ease-in-out infinite}@keyframes tw{50%{opacity:.15}}
+.rise{animation:rise linear infinite;position:absolute;bottom:-8vh}
+@keyframes rise{from{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.9}to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.fly{animation:fly linear infinite;position:absolute}
+@keyframes fly{from{transform:translateX(-12vw)}50%{transform:translateX(50vw) translateY(-25px)}to{transform:translateX(112vw)}}
+.fog{animation:fog 25s ease-in-out infinite alternate}@keyframes fog{to{transform:translateX(-12%)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
